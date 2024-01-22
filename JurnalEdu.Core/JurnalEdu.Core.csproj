@@ -8,11 +8,9 @@
 
   <ItemGroup>
     <Folder Include="Constants\" />
-    <Folder Include="Models\Base\" />
-    <Folder Include="Models\Adm\" />
-    <Folder Include="Models\Building\" />
-    <Folder Include="Models\Sys\" />
-    <Folder Include="Models\Warehouse\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Errors\" />
+    <Folder Include="Enums\" />
   </ItemGroup>
 
 </Project>

@@ -11,4 +11,8 @@
     <Folder Include="Dev\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\JurnalEdu.DataLayer\JurnalEdu.DataLayer.csproj" />
+  </ItemGroup>
+
 </Project>

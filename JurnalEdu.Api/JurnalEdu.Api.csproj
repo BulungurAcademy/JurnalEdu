@@ -15,4 +15,8 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\JurnalEdu.Application\JurnalEdu.Application.csproj" />
+  </ItemGroup>
+
 </Project>

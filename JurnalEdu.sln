@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JurnalEdu.Api", "JurnalEdu.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JurnalEdu.Application", "JurnalEdu.Application\JurnalEdu.Application.csproj", "{5FC0E327-C31B-443B-A9DA-687F88267CC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JurnalEdu.DataLayer", "JurnalEdu.DataLayer\JurnalEdu.DataLayer.csproj", "{AB89C1E3-06C8-4771-B554-C84E6287BF1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JurnalEdu.DataLayer", "JurnalEdu.DataLayer\JurnalEdu.DataLayer.csproj", "{AB89C1E3-06C8-4771-B554-C84E6287BF1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JurnalEdu.Core", "JurnalEdu.Core\JurnalEdu.Core.csproj", "{8283107A-DF65-4D1F-B69C-7308D05CF227}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JurnalEdu.Core", "JurnalEdu.Core\JurnalEdu.Core.csproj", "{8283107A-DF65-4D1F-B69C-7308D05CF227}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JurnalEdu.Domain", "JurnalEdu.Domain\JurnalEdu.Domain.csproj", "{1C2DCF6D-A449-484C-BDEA-C908EA7B12B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{8283107A-DF65-4D1F-B69C-7308D05CF227}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8283107A-DF65-4D1F-B69C-7308D05CF227}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8283107A-DF65-4D1F-B69C-7308D05CF227}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C2DCF6D-A449-484C-BDEA-C908EA7B12B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C2DCF6D-A449-484C-BDEA-C908EA7B12B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C2DCF6D-A449-484C-BDEA-C908EA7B12B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C2DCF6D-A449-484C-BDEA-C908EA7B12B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
