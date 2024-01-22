@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Errors\" />
-    <Folder Include="Extensions\" />
   </ItemGroup>
 
 </Project>
