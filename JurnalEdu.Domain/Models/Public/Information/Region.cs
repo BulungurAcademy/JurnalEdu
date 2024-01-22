@@ -1,7 +1,7 @@
 ﻿using JurnalEdu.Domain.Models.Base;
 
 namespace JurnalEdu.Domain.Models.Public;
-public class Region : BaseInformation<int>
+public class Region : BaseInformationEntity<int>
 {
     public string Code { get; set; }
     public string Soato { get; set; }

@@ -1,6 +1,6 @@
 ﻿using JurnalEdu.Core.Enums;
 namespace JurnalEdu.Domain.Models.Base;
-public class BaseInformation<T>
+public class BaseInformationEntity<T>
 {
     public T Id { get; set; }
     public string OrderCode { get; set; }
