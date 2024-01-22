@@ -8,9 +8,7 @@
 
   <ItemGroup>
     <Folder Include="Models\Adm\" />
-    <Folder Include="Models\Base\" />
     <Folder Include="Models\Building\" />
-    <Folder Include="Models\Public\" />
     <Folder Include="Models\Sys\" />
     <Folder Include="Models\Warehouse\" />
   </ItemGroup>
