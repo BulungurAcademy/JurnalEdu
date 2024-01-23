@@ -11,7 +11,12 @@
     <Folder Include="Models\Building\" />
     <Folder Include="Models\Warehouse\" />
   </ItemGroup>
-
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="8.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.1"/>
+	</ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\JurnalEdu.Core\JurnalEdu.Core.csproj" />
   </ItemGroup>

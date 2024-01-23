@@ -1,8 +1,11 @@
 ﻿using JurnalEdu.Domain.Models.Base;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace JurnalEdu.Domain.Models.Public;
+
+[Index(nameof(Soato), IsUnique = true)]
 public class Region : BaseInformationEntity<int>
 {
     [StringLength(50)]
