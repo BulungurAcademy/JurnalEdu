@@ -35,8 +35,6 @@ public class Person
     public string? PassportGivenName { get; set; }
     public DateTime CreatedAt { get; } = DateTime.Now;
 
-    public ICollection<User> Users { get; set; } = new List<User>();
-
     public string GetFullFIO() => StringExtensions.GetFullFIO(this.LastName ,this.FirstName, this.MiddleName);
     public string GetFIO() => StringExtensions.GetFIO($"{this.LastName} {this.FirstName} {this.MiddleName}");
 }
