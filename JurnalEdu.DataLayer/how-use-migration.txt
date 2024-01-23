@@ -1,0 +1,10 @@
+
+1. Agar Migration file busa o'chirib tashlash
+
+2. Open the [Package Manager Console]
+
+3. Default Project Buttonni -> [JurnalEdu.DataLayer] ga qaratib quyish
+
+4. add-migration [Init-yoki hohlagan nom yozish mumkin]
+
+5. update-database

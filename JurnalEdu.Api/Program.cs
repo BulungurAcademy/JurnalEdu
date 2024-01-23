@@ -1,6 +1,6 @@
+using JurnalEdu.Api.Extensions;
 
 namespace JurnalEdu.Api;
-
 public class Program
 {
     public static void Main(string[] args)
@@ -9,16 +9,27 @@ public class Program
         builder.Services.AddControllers();
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
+
+        #region Service Collection
+
+        builder.Services.AddDB(builder.Configuration);
+        builder.Services.AddSwaggerServices();
+
+
+        #endregion
+
         var app = builder.Build();
 
-        if (app.Environment.IsDevelopment())
-        {
-            app.UseSwagger();
-            app.UseSwaggerUI(c =>
-            {
-                c.DocExpansion(Swashbuckle.AspNetCore.SwaggerUI.DocExpansion.None);
-            });
-        }
+        #region Application Builder
+
+        app.AddSwaggerBuilder();
+
+
+
+
+
+
+        #endregion
 
         app.UseHttpsRedirection();
         app.UseAuthorization();
