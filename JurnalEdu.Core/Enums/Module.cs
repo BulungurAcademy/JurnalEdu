@@ -2,22 +2,22 @@
 public enum Module
 {
     /// <summary>
-    /// Талим
+    /// Education
     /// </summary>
     Education = 1,
 
     /// <summary>
-    /// Ошхона
+    /// Kitchen
     /// </summary>
     Kitchen = 2,
 
     /// <summary>
-    /// Ётоқхона
+    /// Bedroom
     /// </summary>
     Bedroom = 3,
 
     /// <summary>
-    /// Омборхона
+    /// Warehouse
     /// </summary>
     Warehouse = 4
 }

@@ -2,12 +2,12 @@
 public enum State
 {
     /// <summary>
-    /// Фаол
+    /// Active
     /// </summary>
     Active = 1,
 
     /// <summary>
-    /// Пассив
+    /// Passive
     /// </summary>
     Passive = 2
 }
