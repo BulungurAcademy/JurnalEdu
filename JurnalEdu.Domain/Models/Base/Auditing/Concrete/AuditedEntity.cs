@@ -6,7 +6,6 @@ namespace JurnalEdu.Domain.Models.Base.Auditing;
 /// <summary>
 /// A shortcut of <see cref="AuditedEntity{TPrimaryKey}"/> for most used primary key type (<see cref="int"/>).
 /// </summary>
-[Serializable]
 public abstract class AuditedEntity : AuditedEntity<int>, IEntity
 {
 
@@ -16,7 +15,6 @@ public abstract class AuditedEntity : AuditedEntity<int>, IEntity
 /// This class can be used to simplify implementing <see cref="IAudited"/>.
 /// </summary>
 /// <typeparam name="TPrimaryKey">Type of the primary key of the entity</typeparam>
-[Serializable]
 public abstract class AuditedEntity<TPrimaryKey> : CreationAuditedEntity<TPrimaryKey>, IAudited
 {
     /// <summary>
@@ -35,19 +33,18 @@ public abstract class AuditedEntity<TPrimaryKey> : CreationAuditedEntity<TPrimar
 /// </summary>
 /// <typeparam name="TPrimaryKey">Type of the primary key of the entity</typeparam>
 /// <typeparam name="TUser">Type of the user</typeparam>
-[Serializable]
 public abstract class AuditedEntity<TPrimaryKey, TUser> : AuditedEntity<TPrimaryKey>, IAudited<TUser>
     where TUser : IEntity<long>
 {
     /// <summary>
     /// Reference to the creator user of this entity.
     /// </summary>
-    [ForeignKey("CreatorUserId")]
+    [ForeignKey(nameof(CreatorUserId))]
     public virtual TUser CreatorUser { get; set; }
 
     /// <summary>
     /// Reference to the last modifier user of this entity.
     /// </summary>
-    [ForeignKey("LastModifierUserId")]
+    [ForeignKey(nameof(LastModifierUserId))]
     public virtual TUser LastModifierUser { get; set; }
 }

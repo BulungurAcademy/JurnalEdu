@@ -47,6 +47,6 @@ public abstract class CreationAuditedEntity<TPrimaryKey, TUser> : CreationAudite
     /// <summary>
     /// Reference to the creator user of this entity.
     /// </summary>
-    [ForeignKey("CreatorUserId")]
+    [ForeignKey(nameof(CreatorUserId))]
     public virtual TUser CreatorUser { get; set; }
 }
